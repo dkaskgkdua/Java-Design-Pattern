@@ -1,5 +1,9 @@
 package Iterator;
 
+/**
+ * Iterator가 결정한 인터페이스(API)를 실제로 구현
+ * 필요한 정보인 bookshelf와 index를 보유함
+ */
 public class BookShelfIterator implements Iterator{
     private BookShelf bookshelf;
     private int index;
