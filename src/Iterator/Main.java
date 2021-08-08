@@ -17,6 +17,17 @@ public class Main {
             Book book = (Book) it.next();
             System.out.println(book.getName());
         }
-        System.out.println(it.hasNext());
+
+        BookShelfArrayList bookShelf2 = new BookShelfArrayList(4);
+        bookShelf2.appendBook(new Book("책1"));
+        bookShelf2.appendBook(new Book("책2"));
+        bookShelf2.appendBook(new Book("책3"));
+        bookShelf2.appendBook(new Book("책4"));
+        bookShelf2.appendBook(new Book("책5"));
+        Iterator it2 = bookShelf2.iterator();
+        while(it2.hasNext()) {
+            Book book = (Book)it2.next();
+            System.out.println(book.getName());
+        }
     }
 }
